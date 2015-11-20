@@ -21,7 +21,7 @@ Open a web browser [http://localhost:3000/](http://127.0.0.1:3000/)
 Log in using username `jack` and password `secret`.
 
 
-Hao Zhuang and Fang Zhou 
+Hao Zhuang, Zhou Fang
 
 UCSD CSE 
 
