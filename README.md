@@ -18,7 +18,7 @@ $ node server.js
 ```
 
 Open a web browser [http://localhost:3000/](http://127.0.0.1:3000/)
-Log in using username `jack` and password `secret`.
+Log in using username `kitty` and password `hello`.
 
 
 Hao Zhuang, Zhou Fang
