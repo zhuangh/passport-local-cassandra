@@ -6,11 +6,20 @@ We customize the flow for cassandra database.
 
 ## Instructions
 
-Start the server.
+Start the server using Jade template.
 
 ```bash
 $ node server.js
+
 ```
+
+Start the server using EJS template.
+
+```bash
+$ node server_ejs.js
+```
+
+
 
 Open a web browser [http://localhost:3000/](http://127.0.0.1:3000/)
 Log in using username `kitty` and password `hello`.
