@@ -1,0 +1,11 @@
+CREATE KEYSPACE pass WITH REPLICATION =  {'class': 'SimpleStrategy', 'replication_factor': '3'} ;
+DESCRIBE pass; 
+
+USE pass;
+
+CREATE TABLE users (username varchar PRIMARY KEY, password varchar); 
+
+// you should not do password like this, it is here because of simple demo purpose.
+
+
+INSERT INTO pass.users (username, password ) VALUES ('kitty', 'hello') ;
