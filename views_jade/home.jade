@@ -1,0 +1,9 @@
+
+if !user  
+   p Welcome, please 
+     a(href='/login') login
+   p or sign up a new account 
+     a(href='/signup') sign up
+else
+   p Hello #{user.username}  View your 
+      a(href='/profile') profile

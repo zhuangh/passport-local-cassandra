@@ -42,8 +42,8 @@ var app = express();
 
 // Configure view engine to render EJS templates.
 
-app.set('views', __dirname + '/views_jade');
-app.set('view engine', 'jade');
+app.set('views', __dirname + '/views_ejs');
+app.set('view engine', 'ejs');
 
 
 // Use application-level middleware for common functionality, including
@@ -60,11 +60,11 @@ app.use(passport.session());
 
 // Define routes.
 app.get('/', function(req, res) {
-    res.render('home', { "user": req.user });
+    res.render('home', { user: req.user });
   });
 
 app.get('/login', function(req, res){
-    res.render('login', {"user": req.user});
+    res.render('login');
   });
 
 app.get('/signup', function(req, res){
@@ -83,7 +83,7 @@ app.get('/logout', function(req, res){
   });
 
 app.get('/profile', require('connect-ensure-login').ensureLoggedIn(), function(req, res){
-    res.render('profile', { "user": req.user });
+    res.render('profile', { user: req.user });
   });
 
 app.listen(3000);

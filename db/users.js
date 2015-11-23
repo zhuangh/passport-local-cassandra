@@ -59,3 +59,4 @@ exports.dbInsert = function(req, res) {
     });
     res.redirect('/');
 };
+
