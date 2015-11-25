@@ -24,6 +24,19 @@ $ node server_ejs.js
 Open a web browser [http://localhost:3000/](http://127.0.0.1:3000/)
 Log in using username `kitty` and password `hello`.
 
+## Software details:
+
+Cassandra: 2.0.11 (some parts in datastax's node.js driver for Cassandra 3.0 have glitches at this moment, 2015-11-24)
+
+cqlsh: 4.1.1
+
+CQL spec 3.1.1
+
+Thrift protocol 19.39.0
+
+
+
+Regards,
 
 Hao Zhuang, and Zhou Fang
 

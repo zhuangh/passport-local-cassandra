@@ -26,6 +26,7 @@ passport.use(new Strategy(
 // typical implementation of this is as simple as supplying the user ID when
 // serializing, and querying the user record by ID from the database when
 // deserializing.
+
 passport.serializeUser(function(user, done) {
   done(null, user.username);
 });
@@ -41,7 +42,6 @@ passport.deserializeUser(function(username, done) {
 var app = express();
 
 // Configure view engine to render EJS templates.
-
 app.set('views', __dirname + '/views_jade');
 app.set('view engine', 'jade');
 
